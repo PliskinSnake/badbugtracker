@@ -9,7 +9,7 @@
                 templateUrl: 'partials/main.html',
                 controller: 'MainController'
             })
-			.when('/developer', {
+			.when('/developers', {
 		 		templateUrl: 'partials/developers.html',
 		  		controller: 'DevelopersController'
 		  	})
@@ -119,7 +119,7 @@
 
 app.service('DevelopersService', function($http) {
     var service = this;
-    var path = '/developer/';
+    var path = '/developers/';
 
     function getPath() {
         return path;
