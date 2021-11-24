@@ -21,6 +21,14 @@ public class DeveloperService {
         return developerRepo.findAll();
     }
 
+    public void deleteDeveloper(Long id) {
+         developerRepo.deleteById(id);
+    }
+
+    public Developer updateDeveloper(Developer developer) {
+        return developerRepo.save(developer);
+    }
+
 
 
 }
