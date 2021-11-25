@@ -1,7 +1,7 @@
 package com.dmitrii.silin.badbugtracker.api;
 
 
-import com.dmitrii.silin.badbugtracker.entities.Bug;
+import com.dmitrii.silin.badbugtracker.entities.BugEntity;
 import com.dmitrii.silin.badbugtracker.services.BugService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +22,7 @@ public class BugApi {
     }
     
     @GetMapping
-    public List<Bug> getAllBugs() {
+    public List<BugEntity> getAllBugs() {
         return bugService.getAllBugs();
     }
 

@@ -1,6 +1,6 @@
 package com.dmitrii.silin.badbugtracker.services;
 
-import com.dmitrii.silin.badbugtracker.entities.Developer;
+import com.dmitrii.silin.badbugtracker.entities.DeveloperEntity;
 import com.dmitrii.silin.badbugtracker.repositories.DeveloperRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ public class DeveloperService {
         this.developerRepo = developerRepo;
     }
 
-    public List<Developer> getAllDevelopers() {
+    public List<DeveloperEntity> getAllDevelopers() {
         return developerRepo.findAll();
     }
 
@@ -25,7 +25,11 @@ public class DeveloperService {
          developerRepo.deleteById(id);
     }
 
-    public Developer updateDeveloper(Developer developer) {
+    public DeveloperEntity updateDeveloper(DeveloperEntity developer) {
+        return developerRepo.save(developer);
+    }
+
+    public DeveloperEntity addDeveloper(DeveloperEntity developer) {
         return developerRepo.save(developer);
     }
 

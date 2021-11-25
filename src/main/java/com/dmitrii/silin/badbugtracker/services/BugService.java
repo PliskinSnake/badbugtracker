@@ -1,6 +1,6 @@
 package com.dmitrii.silin.badbugtracker.services;
 
-import com.dmitrii.silin.badbugtracker.entities.Bug;
+import com.dmitrii.silin.badbugtracker.entities.BugEntity;
 import com.dmitrii.silin.badbugtracker.repositories.BugRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ public class BugService {
         this.bugRepo = bugRepo;
     }
 
-    public List<Bug> getAllBugs() {
+    public List<BugEntity> getAllBugs() {
         return bugRepo.findAll();
     }
 }

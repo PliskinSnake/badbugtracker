@@ -1,0 +1,114 @@
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-25T224758.200.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-25T224751.200.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "first_name": "test",
+  "second_name": "test-test"
+}
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "first_name": "test",
+  "second_name": "test-test",
+  "email": "test@test"
+}
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "first_name": "test",
+  "second_name": "test-test",
+  "email": "test@test"
+}
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "first_name": "test",
+  "second_name": "test-test",
+  "email": "test@test"
+}
+
+###
+
+POST http://localhost:80/api/item
+Content-Type: application/json
+
+{
+  "first_name": "test",
+  "second_name": "test-test",
+  "email": "test@test"
+}
+
+###
+
+POST http://localhost:8080/developers/create
+
+<> 2021-11-25T222630.404.json
+
+###
+
+DELETE http://localhost:8080/developers/delete/2
+
+###
+
+DELETE http://localhost:8080/developers/delete/2
+
+<> 2021-11-24T215947.404.json
+
+###
+
+DELETE http://localhost:8080/developers/delete/1
+
+<> 2021-11-24T215926.404.json
+
+###
+

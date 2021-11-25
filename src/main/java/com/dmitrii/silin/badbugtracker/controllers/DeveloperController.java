@@ -1,6 +1,6 @@
 package com.dmitrii.silin.badbugtracker.controllers;
 
-import com.dmitrii.silin.badbugtracker.entities.Developer;
+import com.dmitrii.silin.badbugtracker.entities.DeveloperEntity;
 import com.dmitrii.silin.badbugtracker.services.DeveloperService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +20,7 @@ public class DeveloperController {
     }
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    public List<Developer> getAllDevelopers() {
+    public List<DeveloperEntity> getAllDevelopers() {
         return developerService.getAllDevelopers();
     }
 
@@ -30,9 +30,17 @@ public class DeveloperController {
     }
 
     @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
-    public Developer updateDeveloper(@RequestBody Developer developer) {
+    public DeveloperEntity updateDeveloper(@RequestBody DeveloperEntity developer) {
         return developerService.updateDeveloper(developer);
     }
+
+    @RequestMapping(value = "/create/", method = RequestMethod.POST)
+    public DeveloperEntity createDeveloper(@RequestBody DeveloperEntity developer) {
+        return developerService.addDeveloper(developer);
+    }
+
+
+
 
 
 
