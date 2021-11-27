@@ -1,3 +1,103 @@
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+}
+
+<> 2021-11-27T174410.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+}
+
+<> 2021-11-27T174354.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/1
+Content-Type: application/json
+
+{
+  "title": "tetshg",
+  "description": "dfhfhjksdfjkhgsdf",
+  "dateOfCreation": "2020-10-25T21:00:00.000+00:00"
+}
+
+<> 2021-11-27T174028.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshgjsadfiughsidefuhg",
+  "description": "dfhkgfjhksdgfhjksdfhjksdfjkhgsdf",
+  "dateOfCreation": "2020-10-25T21:00:00.000+00:00"
+
+
+}
+
+<> 2021-11-27T172420.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/1
+Content-Type: application/json
+
+{
+  "title": "tetsteifhgjsadfiughsidefuhg",
+  "description": "dfghusdhkgfjhksdgfhjksdfhjksdfjkhgsdf",
+  "dateOfCreation": "2021-10-25T21:00:00.000+00:00"
+
+
+}
+
+<> 2021-11-27T172239.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/1
+Content-Type: application/json
+
+{
+  "title": "tetsteifhgjsadfiughsidefuhg"
+  "description": "dfghusdhkgfjhksdgfhjksdfhjksdfjkhgsdf"
+  "dateOfCreation": "2021-10-25T21:00:00.000+00:00"
+
+
+}
+
+<> 2021-11-27T172224.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/{{1}}
+Content-Type: application/json
+
+{
+  "title": "tetsteifhgjsadfiughsidefuhg"
+  "description": "dfghusdhkgfjhksdgfhjksdfhjksdfjkhgsdf"
+  "dateOfCreation": "2021-10-25T21:00:00.000+00:00"
+
+
+}
+
+###
+
 POST http://localhost:8080/developers/create/
 Content-Type: application/json
 
