@@ -4,12 +4,10 @@ import com.dmitrii.silin.badbugtracker.entities.DeveloperEntity;
 import com.dmitrii.silin.badbugtracker.services.DeveloperService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
-
 @RestController
-@RequestMapping("/developers")
+@RequestMapping("/developer")
 public class DeveloperController {
 
     private final DeveloperService developerService;
@@ -29,14 +27,13 @@ public class DeveloperController {
         developerService.deleteDeveloper(id);
     }
 
-    @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT)
     public DeveloperEntity updateDeveloper(@RequestBody DeveloperEntity developer) {
         return developerService.updateDeveloper(developer);
     }
 
-    @RequestMapping(value = "/create/", method = RequestMethod.POST)
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     public DeveloperEntity createDeveloper(@RequestBody DeveloperEntity developer) {
         return developerService.addDeveloper(developer);
     }
-
 }

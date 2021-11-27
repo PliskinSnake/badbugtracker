@@ -8,5 +8,3 @@ INSERT INTO urgency(id, name, description) VALUES
     (2, 'high', 'very important'),
     (3, 'normal', 'normal issue');
 
--- INSERT INTO report(id, developer_id, bug_id, priority_name, urgency_name) VALUES
---     (1, 54, 1, 'super_important', 'blocker');

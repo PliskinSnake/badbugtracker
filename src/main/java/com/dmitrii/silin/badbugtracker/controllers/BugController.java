@@ -4,7 +4,6 @@ import com.dmitrii.silin.badbugtracker.entities.BugEntity;
 import com.dmitrii.silin.badbugtracker.services.BugService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -28,7 +27,7 @@ public class BugController {
         bugService.removeBug(id);
     }
 
-    @RequestMapping(value = "/update/", method = RequestMethod.PUT)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT)
     public BugEntity updateBug(@RequestBody BugEntity bug) {
         return bugService.updateBug(bug);
     }

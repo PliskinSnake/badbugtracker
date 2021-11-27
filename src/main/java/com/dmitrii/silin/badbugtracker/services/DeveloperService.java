@@ -4,7 +4,6 @@ import com.dmitrii.silin.badbugtracker.entities.DeveloperEntity;
 import com.dmitrii.silin.badbugtracker.repositories.DeveloperRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -32,5 +31,4 @@ public class DeveloperService {
     public DeveloperEntity addDeveloper(DeveloperEntity developer) {
         return developerRepo.save(developer);
     }
-
 }

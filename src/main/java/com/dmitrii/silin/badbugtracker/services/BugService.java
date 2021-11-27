@@ -2,10 +2,8 @@ package com.dmitrii.silin.badbugtracker.services;
 
 import com.dmitrii.silin.badbugtracker.entities.BugEntity;
 import com.dmitrii.silin.badbugtracker.repositories.BugRepo;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 
@@ -30,8 +28,4 @@ public class BugService {
     public BugEntity updateBug(BugEntity bug) {
         return bugRepo.save(bug);
     }
-
-
-
-
 }

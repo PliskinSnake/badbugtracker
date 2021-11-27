@@ -19,5 +19,4 @@ public class BugPriorityEntity extends BaseEntity{
 
     @Column(name = "description")
     private String description;
-
 }

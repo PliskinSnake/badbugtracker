@@ -13,6 +13,7 @@ CREATE TABLE bug (
     title varchar(200),
     description TEXT,
     dateOfCreation DATE,
+    developer_id INT,
     PRIMARY KEY (id)
 );
 
@@ -31,11 +32,9 @@ CREATE TABLE urgency (
 );
 
 CREATE TABLE report (
---     id INT NOT NULL ,
     developer_id INT NOT NULL,
     bug_id INT NOT NULL,
---     priority_name VARCHAR(100),
---     urgency_name VARCHAR(100),
+
 
     PRIMARY KEY (developer_id, bug_id),
 
@@ -47,13 +46,6 @@ CREATE TABLE report (
         REFERENCES bug(id)
         ON DELETE NO ACTION ON UPDATE NO ACTION
 
---     CONSTRAINT PRIORITY_NAME_FK FOREIGN KEY (priority_name)
---         REFERENCES priority(name)
---         ON DELETE NO ACTION ON UPDATE NO ACTION,
---
---     CONSTRAINT URGENCY_NAME_FK FOREIGN KEY (urgency_name)
---         REFERENCES urgency(name)
---         ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 

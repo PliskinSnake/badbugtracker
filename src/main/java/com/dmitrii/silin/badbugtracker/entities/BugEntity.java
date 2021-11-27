@@ -1,10 +1,8 @@
 package com.dmitrii.silin.badbugtracker.entities;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -23,6 +21,13 @@ public class BugEntity extends BaseEntity {
 
     @Column(name = "dateofcreation")
     private Date dateOfCreation;
+
+    @Column(name = "developer_id")
+    private Long id;
+
+    @OneToOne
+    @JoinColumn(name = "developerId")
+    private DeveloperEntity developer;
 
 }
 

@@ -1,3 +1,31 @@
+PUT http://localhost:8080/developers/update
+Content-Type: application/json
+{:
+  "id": 1,
+  "firstName": "tetshg",
+  "secondName": "dgsdf",
+  "email": "ghfdghfdghjdf@fdghdfhghgfd.com",
+  "bugs": [2]
+}:
+
+<> 2021-11-27T180707.400.html
+
+###
+
+PUT http://localhost:8080/developers/update
+Content-Type: application/json
+{:
+  "id": 1,
+  "firstName": "tetshg",
+  "secondName": "dgsdf",
+  "email": "ghfdghfdghjdf@fdghdfhghgfd.com",
+  "bugs": 2
+}:
+
+<> 2021-11-27T180633.400.html
+
+###
+
 PUT http://localhost:8080/bug/update/
 Content-Type: application/json
 
