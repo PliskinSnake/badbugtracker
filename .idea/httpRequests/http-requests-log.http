@@ -2,6 +2,127 @@ POST http://localhost:8080/developers/create/
 Content-Type: application/json
 
 {
+  "email": "test456456@test546456",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T020254.200.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test456456@test546456",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T015612.200.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T015507.500.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T015435.200.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T015331.500.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T015244.500.json
+
+###
+
+GET http://localhost:8080/developers/list
+
+<> 2021-11-27T014643.500.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T014203.500.json
+
+###
+
+GET http://localhost:8080/developers/list
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
+  "email": "test@test",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-11-27T014004.500.json
+
+###
+
+GET http://localhost:8080/developers/list
+
+<> 2021-11-27T013414.500.json
+
+###
+
+POST http://localhost:8080/developers/create/
+Content-Type: application/json
+
+{
   "email": "test@test",
   "firstName": "test",
   "secondName": "test-test"

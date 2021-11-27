@@ -19,7 +19,7 @@ public class DeveloperController {
         this.developerService = developerService;
     }
 
-    @RequestMapping(value = "list", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public List<DeveloperEntity> getAllDevelopers() {
         return developerService.getAllDevelopers();
     }
@@ -38,12 +38,5 @@ public class DeveloperController {
     public DeveloperEntity createDeveloper(@RequestBody DeveloperEntity developer) {
         return developerService.addDeveloper(developer);
     }
-
-
-
-
-
-
-
 
 }

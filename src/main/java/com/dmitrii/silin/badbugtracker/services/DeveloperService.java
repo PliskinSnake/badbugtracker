@@ -33,6 +33,4 @@ public class DeveloperService {
         return developerRepo.save(developer);
     }
 
-
-
 }
