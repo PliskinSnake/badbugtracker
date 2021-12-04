@@ -36,4 +36,9 @@ public class DeveloperController {
     public DeveloperEntity createDeveloper(@RequestBody DeveloperEntity developer) {
         return developerService.addDeveloper(developer);
     }
+
+    @RequestMapping(value = "/{email}", method = RequestMethod.GET)
+    public DeveloperEntity getDeveloper(@PathVariable("email") String email) {
+        return developerService.getDeveloper(email);
+    }
 }

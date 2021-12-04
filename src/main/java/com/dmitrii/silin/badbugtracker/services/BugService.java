@@ -28,4 +28,5 @@ public class BugService {
     public BugEntity updateBug(BugEntity bug) {
         return bugRepo.save(bug);
     }
+
 }

@@ -1,13 +1,13 @@
 package com.dmitrii.silin.badbugtracker.entities;
 
-
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import javax.persistence.*;
 
+
+@Getter
+@Setter
 @NoArgsConstructor
 @Entity
-@Data
 @Table(name = "developer")
 public class DeveloperEntity extends BaseEntity {
 

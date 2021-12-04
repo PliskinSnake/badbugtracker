@@ -22,12 +22,17 @@ public class BugEntity extends BaseEntity {
     @Column(name = "dateofcreation")
     private Date dateOfCreation;
 
-    @Column(name = "developer_id")
-    private Long id;
+    @ManyToOne
+    @JoinColumn(name = "developer_id")
+    private DeveloperEntity developer_id;
 
-    @OneToOne
-    @JoinColumn(name = "developerId")
-    private DeveloperEntity developer;
+    @ManyToOne
+    @JoinColumn(name = "status")
+    private BugStatusEntity status;
+
+    @ManyToOne
+    @JoinColumn(name = "urgency")
+    private BugUrgencyEntity urgency;
 
 }
 

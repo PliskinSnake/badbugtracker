@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Main-Class: com.dmitrii.silin.badbugtracker.BadbugtrackerApplication
+Class-Path: spring-boot-starter-data-jpa-2.6.0.jar spring-boot-starter-j
+ son-2.6.0.jar logback-classic-1.2.7.jar jackson-core-2.13.0.jar hiberna
+ te-commons-annotations-5.1.2.Final.jar spring-webmvc-5.3.13.jar tomcat-
+ embed-websocket-9.0.55.jar classmate-1.5.1.jar spring-boot-starter-tomc
+ at-2.6.0.jar spring-tx-5.3.13.jar jakarta.activation-api-1.2.2.jar spri
+ ng-data-jpa-2.6.0.jar log4j-api-2.14.1.jar HikariCP-4.0.3.jar jakarta.a
+ ctivation-1.2.2.jar jackson-datatype-jdk8-2.13.0.jar spring-boot-starte
+ r-web-2.6.0.jar aspectjweaver-1.9.7.jar jakarta.xml.bind-api-2.3.3.jar 
+ tomcat-embed-core-9.0.55.jar jakarta.persistence-api-2.2.3.jar spring-p
+ lugin-core-2.0.0.RELEASE.jar checker-qual-3.5.0.jar log4j-to-slf4j-2.14
+ .1.jar spring-boot-2.6.0.jar postgresql-42.3.1.jar spring-boot-starter-
+ jdbc-2.6.0.jar jandex-2.2.3.Final.jar spring-beans-5.3.13.jar jaxb-runt
+ ime-2.3.5.jar spring-boot-starter-aop-2.6.0.jar spring-core-5.3.13.jar 
+ spring-aspects-5.3.13.jar spring-orm-5.3.13.jar snakeyaml-1.29.jar antl
+ r-2.7.7.jar jackson-module-parameter-names-2.13.0.jar hibernate-core-5.
+ 6.1.Final.jar jackson-annotations-2.13.0.jar jboss-logging-3.4.2.Final.
+ jar spring-boot-autoconfigure-2.6.0.jar spring-jdbc-5.3.13.jar jakarta.
+ transaction-api-1.3.3.jar spring-context-5.3.13.jar txw2-2.3.5.jar tomc
+ at-embed-el-9.0.55.jar spring-aop-5.3.13.jar logback-core-1.2.7.jar spr
+ ing-jcl-5.3.13.jar jackson-datatype-jsr310-2.13.0.jar byte-buddy-1.11.2
+ 2.jar jakarta.annotation-api-1.3.5.jar jackson-databind-2.13.0.jar spri
+ ng-data-commons-2.6.0.jar jul-to-slf4j-1.7.32.jar spring-web-5.3.13.jar
+  spring-boot-starter-logging-2.6.0.jar hsqldb-2.5.2.jar spring-expressi
+ on-5.3.13.jar lombok-1.18.22.jar slf4j-api-1.7.32.jar spring-boot-start
+ er-2.6.0.jar istack-commons-runtime-3.0.12.jar
+

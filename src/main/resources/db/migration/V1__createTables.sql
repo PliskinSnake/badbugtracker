@@ -17,36 +17,43 @@ CREATE TABLE bug (
     PRIMARY KEY (id)
 );
 
-CREATE TABLE priority (
-    id serial UNIQUE,
+CREATE TABLE status (
     name VARCHAR(100) UNIQUE,
     description TEXT,
-    PRIMARY KEY (id, name)
+    PRIMARY KEY (name)
 );
 
 CREATE TABLE urgency (
-    id serial UNIQUE,
     name VARCHAR(100) UNIQUE,
     description TEXT,
-    PRIMARY KEY (id, name)
+    PRIMARY KEY (name)
 );
 
-CREATE TABLE report (
-    developer_id INT NOT NULL,
-    bug_id INT NOT NULL,
-
-
-    PRIMARY KEY (developer_id, bug_id),
-
-    CONSTRAINT DEVELOPER_ID_FK FOREIGN KEY (developer_id)
-        REFERENCES developer(id)
-        ON DELETE NO ACTION ON UPDATE NO ACTION,
-
-    CONSTRAINT BUG_ID_FK FOREIGN KEY (bug_id)
-        REFERENCES bug(id)
-        ON DELETE NO ACTION ON UPDATE NO ACTION
-
-);
+-- CREATE TABLE report (
+--     id SERIAL UNIQUE,
+--     bug_id INT NOT NULL,
+--     status VARCHAR NOT NULL,
+--     urgency VARCHAR NOT NULL,
+--     developer_id INT NOT NULL,
+--
+--     PRIMARY KEY (id),
+--
+--     CONSTRAINT BUG_ID_FK FOREIGN KEY (bug_id)
+--         REFERENCES bug(id)
+--         ON DELETE NO ACTION ON UPDATE NO ACTION,
+--
+--     CONSTRAINT STATUS_FK FOREIGN KEY (status)
+--         REFERENCES status(name)
+--         ON DELETE NO ACTION ON UPDATE NO ACTION,
+--
+--     CONSTRAINT URGENCY_FK FOREIGN KEY (urgency)
+--         REFERENCES urgency(name)
+--         ON DELETE NO ACTION ON UPDATE NO ACTION,
+--
+--     CONSTRAINT DEVELOPER_EMAIL_FK FOREIGN KEY (developer_id)
+--         REFERENCES developer(id)
+--         ON DELETE NO ACTION ON UPDATE NO ACTION
+-- );
 
 
 

@@ -31,4 +31,9 @@ public class DeveloperService {
     public DeveloperEntity addDeveloper(DeveloperEntity developer) {
         return developerRepo.save(developer);
     }
+
+    public DeveloperEntity getDeveloper(String email) {
+        return developerRepo.findByEmail(email);
+    }
+
 }
