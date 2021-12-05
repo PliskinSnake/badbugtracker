@@ -31,10 +31,4 @@ public class BugController {
     public BugEntity updateBug(@RequestBody BugEntity bug) {
         return bugService.updateBug(bug);
     }
-
-
-
-
-
-
 }

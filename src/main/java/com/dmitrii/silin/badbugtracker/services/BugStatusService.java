@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class BugStatusService {
 
-    private BugStatusRepo bugPriorityRepo;
+    private final BugStatusRepo bugPriorityRepo;
 
     @Autowired
     public BugStatusService(BugStatusRepo bugPriorityRepo) {

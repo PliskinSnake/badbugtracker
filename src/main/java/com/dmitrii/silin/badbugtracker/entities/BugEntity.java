@@ -33,6 +33,5 @@ public class BugEntity extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "urgency")
     private BugUrgencyEntity urgency;
-
 }
 

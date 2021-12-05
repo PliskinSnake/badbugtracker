@@ -14,12 +14,12 @@ public class HostController {
 
     @RequestMapping(value = "/ip", method = RequestMethod.GET)
     public String getIp() throws UnknownHostException {
-        return InetAddress.getLocalHost().getHostAddress();
+        return InetAddress.getLocalHost().getHostAddress() + "\n";
     }
 
     @RequestMapping(value = "/hostname", method = RequestMethod.GET)
     public String getName() throws UnknownHostException {
-        return InetAddress.getLocalHost().getHostName();
+        return InetAddress.getLocalHost().getHostName() + "\n";
     }
 
 }

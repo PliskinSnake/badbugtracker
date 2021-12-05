@@ -1,3 +1,381 @@
+POST http://localhost:8080/report/create
+Content-Type: application/json
+
+{
+  "developerId": 56,
+  "bugId": 5
+}
+
+<> 2021-12-05T212033.200.json
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+
+{
+  "developer_id": 56,
+  "bug_id": 5
+}
+
+<> 2021-12-05T212011.200.json
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+
+{
+  "developer_id": 56,
+  "bug_id": 5
+}
+
+<> 2021-12-05T211720.500.json
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+
+{
+  "id": 5,
+  "developerId": 56,
+  "bugId": 5
+}
+
+<> 2021-12-05T211622.500.json
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+
+{
+  "developerId": 56,
+  "bugId": 5
+}
+
+<> 2021-12-05T211505.500.json
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+
+{
+  "developerId": 56,
+  "bugId": 12
+}
+
+<> 2021-12-05T211350.500.json
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+{:
+  "developerId": 56,
+  "bugId": 12
+}:
+
+<> 2021-12-05T211302.400.html
+
+###
+
+POST http://localhost:8080/report/create
+Content-Type: application/json
+{:
+"developerId": 56,
+"bugId": 12
+}:
+
+<> 2021-12-05T211202.400.html
+
+###
+
+POST http://localhost:8080/developer/create/
+Content-Type: application/json
+
+{
+  "email": "test456456@test546456",
+  "firstName": "test",
+  "secondName": "test-test"
+}
+
+<> 2021-12-05T205523.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "title": "test",
+  "description": "test",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "developer_id": {
+    "id": 1,
+    "firstName": "Giff",
+    "secondName": "Darby",
+    "email": "gdarby0@mapy.cz"
+  },
+  "status": {
+    "name": "new",
+    "description": "new bug"
+  },
+  "urgency": {
+    "name": "blocker",
+    "description": "crash"
+  }
+}
+
+<> 2021-12-05T204031.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "title": "test",
+  "description": "test",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+  "developer_id": {
+    "id": 1,
+    "firstName": "Giff",
+    "secondName": "Darby",
+    "email": "gdarby0@mapy.cz"
+  },
+  "status": {
+    "name": "new",
+    "description": "new bug"
+  },
+  "urgency": {
+    "name": "blocker",
+    "description": "crash"
+  }
+}
+
+<> 2021-12-05T204009.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "title": "test",
+  "description": "test",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "developer_id": 1
+}
+
+<> 2021-12-05T202219.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "title": "test",
+  "description": "test",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "developer_id": "1"
+}
+
+<> 2021-12-05T202207.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "title": "test",
+  "description": "test",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "developer_id": 1
+}
+
+<> 2021-12-05T202147.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 101,
+  "title": "test",
+  "description": "test",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+}
+
+<> 2021-12-05T202122.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+}
+
+<> 2021-12-05T202049.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 100,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+}
+
+<> 2021-12-05T202026.200.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 100,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00"
+//  "status": "new",
+//  "urgency": "blocker"
+}
+
+<> 2021-12-05T202018.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 100,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "status": "new",
+  "urgency": "blocker"
+}
+
+<> 2021-12-05T201913.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "status": "new",
+  "urgency": "blocker"
+}
+
+<> 2021-12-05T201858.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "status": "in progress",
+  "urgency": "blocker"
+}
+
+<> 2021-12-05T201747.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "status": "in progress",
+  "urgency": "blocker"
+}
+
+<> 2021-12-05T201643.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "developer_id": 6,
+  "status": "in progress",
+  "urgency": "blocker"
+}
+
+<> 2021-12-05T201543.400.json
+
+###
+
+PUT http://localhost:8080/bug/update/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "tetshg",
+  "description": "dgsdf",
+  "dateOfCreation": "1991-10-25T21:00:00.000+00:00",
+  "developer_id": 6
+  "status": "in progress",
+  "urgency": "blocker"
+}
+
+<> 2021-12-05T201533.400.json
+
+###
+
+PUT http://localhost:8080/developers/update
+Content-Type: application/json
+{:
+  "id": 1,
+  "firstName": "tetshg",
+  "secondName": "dgsdf",
+  "email": "ghfdghfdghjdf@fdghdfhghgfd.com",
+  "bug": 2
+}:
+
+<> 2021-12-05T201332.400.html
+
+###
+
 GET http://localhost:8080/developer/1
 
 <> 2021-11-28T175623.500.json
@@ -311,288 +689,6 @@ Content-Type: application/json
 }
 
 <> 2021-11-27T174028.200.json
-
-###
-
-PUT http://localhost:8080/bug/update/1
-Content-Type: application/json
-
-{
-  "id": 1,
-  "title": "tetshgjsadfiughsidefuhg",
-  "description": "dfhkgfjhksdgfhjksdfhjksdfjkhgsdf",
-  "dateOfCreation": "2020-10-25T21:00:00.000+00:00"
-
-
-}
-
-<> 2021-11-27T172420.200.json
-
-###
-
-PUT http://localhost:8080/bug/update/1
-Content-Type: application/json
-
-{
-  "title": "tetsteifhgjsadfiughsidefuhg",
-  "description": "dfghusdhkgfjhksdgfhjksdfhjksdfjkhgsdf",
-  "dateOfCreation": "2021-10-25T21:00:00.000+00:00"
-
-
-}
-
-<> 2021-11-27T172239.200.json
-
-###
-
-PUT http://localhost:8080/bug/update/1
-Content-Type: application/json
-
-{
-  "title": "tetsteifhgjsadfiughsidefuhg"
-  "description": "dfghusdhkgfjhksdgfhjksdfhjksdfjkhgsdf"
-  "dateOfCreation": "2021-10-25T21:00:00.000+00:00"
-
-
-}
-
-<> 2021-11-27T172224.400.json
-
-###
-
-PUT http://localhost:8080/bug/update/{{1}}
-Content-Type: application/json
-
-{
-  "title": "tetsteifhgjsadfiughsidefuhg"
-  "description": "dfghusdhkgfjhksdgfhjksdfhjksdfjkhgsdf"
-  "dateOfCreation": "2021-10-25T21:00:00.000+00:00"
-
-
-}
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test456456@test546456",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T020254.200.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test456456@test546456",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T015612.200.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T015507.500.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T015435.200.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "id": 101,
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T015331.500.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T015244.500.json
-
-###
-
-GET http://localhost:8080/developers/list
-
-<> 2021-11-27T014643.500.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T014203.500.json
-
-###
-
-GET http://localhost:8080/developers/list
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-27T014004.500.json
-
-###
-
-GET http://localhost:8080/developers/list
-
-<> 2021-11-27T013414.500.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-25T224758.200.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-<> 2021-11-25T224751.200.json
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "firstName": "test",
-  "secondName": "test-test"
-}
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "email": "test@test",
-  "first_name": "test",
-  "second_name": "test-test"
-}
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "first_name": "test",
-  "second_name": "test-test",
-  "email": "test@test"
-}
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "first_name": "test",
-  "second_name": "test-test",
-  "email": "test@test"
-}
-
-###
-
-POST http://localhost:8080/developers/create/
-Content-Type: application/json
-
-{
-  "first_name": "test",
-  "second_name": "test-test",
-  "email": "test@test"
-}
-
-###
-
-POST http://localhost:80/api/item
-Content-Type: application/json
-
-{
-  "first_name": "test",
-  "second_name": "test-test",
-  "email": "test@test"
-}
-
-###
-
-POST http://localhost:8080/developers/create
-
-<> 2021-11-25T222630.404.json
-
-###
-
-DELETE http://localhost:8080/developers/delete/2
 
 ###
 

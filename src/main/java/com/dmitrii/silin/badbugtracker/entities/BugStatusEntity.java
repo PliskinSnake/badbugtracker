@@ -2,15 +2,13 @@ package com.dmitrii.silin.badbugtracker.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import javax.persistence.*;
 
 @NoArgsConstructor
 @Entity
 @Data
-@Table(name = "bug_status")
+@Table(name = "status")
 public class BugStatusEntity {
 
     @Id
@@ -19,4 +17,5 @@ public class BugStatusEntity {
 
     @Column(name = "description")
     private String description;
+
 }

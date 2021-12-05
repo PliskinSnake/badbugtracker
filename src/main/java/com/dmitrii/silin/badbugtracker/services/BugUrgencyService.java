@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class BugUrgencyService {
 
-    private BugUrgencyRepo bugUrgencyRepo;
+    private final BugUrgencyRepo bugUrgencyRepo;
 
     @Autowired
     public BugUrgencyService(BugUrgencyRepo bugUrgencyRepo) {

@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Entity
 @Data
-@Table(name = "bug_urgency")
+@Table(name = "urgency")
 public class BugUrgencyEntity {
 
     @Id
