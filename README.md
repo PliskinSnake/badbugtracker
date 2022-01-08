@@ -154,6 +154,16 @@ curl -XPUT 'http://localhost:8080/developer/update' \
 curl http://localhost:8080/report/list
 ```
 
+### Лабораторная работа №2: создание кластера Kubernetes и деплой приложения
+
+![Agnoster theme](images/pods.png)
+
+![Agnoster theme](images/pods_10.png)
+
+
+
+
+
 
 
 
